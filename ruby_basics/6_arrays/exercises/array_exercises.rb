@@ -22,8 +22,7 @@ end
 
 def last_three_elements(array)
   # return the last 3 elements of the array
-  array.reverse!
-  array[0..2].reverse!
+  array.pop(3)
 end
 
 def add_element(array)
