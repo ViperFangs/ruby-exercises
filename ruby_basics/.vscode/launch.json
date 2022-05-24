@@ -14,8 +14,12 @@
     },
     {
       "type": "rdbg",
-      "name": "Attach with rdbg",
-      "request": "attach"
+      "name": "Run rake test",
+      "request": "launch",
+      "command": "rake",  // 
+      "script": "test",   // launch rake test with debugger
+      "args": [],
+      "askParameters": false
     }
   ]
 }
