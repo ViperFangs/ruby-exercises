@@ -5,11 +5,12 @@ end
 
 def correct_guess?(guess_list, answer)
   # use #any? to return true when any element of the guess_list (array) equals the answer (number)
-  guess_list.any? {|number| number == answer}
+  guess_list.any? { |number| number == answer }
 end
 
 def twenty_first_century_years?(year_list)
   # use #all? to return true when all of the years in the year_list (array) are between 2001 and 2100
+  year_list.all?{ |year| year.between(2001,2100)}
 end
 
 def correct_format?(word_list)
