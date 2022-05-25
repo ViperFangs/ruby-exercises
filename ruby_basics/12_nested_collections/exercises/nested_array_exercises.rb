@@ -43,14 +43,8 @@ def delete_row_from_chart(chart, row_index)
 end
 
 def count_empty_seats(chart)
-  take a chart and return the number of empty (nil) seats in it
-  new_array = []
-
-  chart.each do |row|
-   new_array += row.select { |item| item == nil } 
-  end
-
-  new_array.length
+  # take a chart and return the number of empty (nil) seats in it
+  chart.flatten.select { |seat| seat == nil }.length
   # NOTE: `chart` should **not** be mutated
 end
 
